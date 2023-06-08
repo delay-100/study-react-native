@@ -14,7 +14,12 @@ const MyButton = ({
   return (
     <TouchableOpacity
       //   onPress={props.onPress}
-      onPress={onPress}
+      // onPress={onPress}
+      onPress={() => console.log("press")}
+      onPressIn={() => console.log("in")}
+      onPressOut={() => console.log("out")}
+      onLongPress={() => console.log("long")}
+      delayLongPress={3000}
       //   hitSlop={{ bottom: 100, top: 100, left: 100, right: 100 }} // hitSlop은 공간을 실제로 차지하지 않음(margin은 실제로 공간을차지함)
       //   pressRetentionOffset={{ bottom: 100, top: 100, left: 100, right: 100 }} // 마우스를 꾹누르고 다른곳으로 가면 누름상태가 해제됨
       //
